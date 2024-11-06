@@ -1,55 +1,78 @@
  /*inter and macondo fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap');
 
-/* CSS Variables */
-:root {
-    --primary-font: "Inter", sans-serif;
-    --secondary-font: "Macondo", cursive;
-    --primary-color: #3a2620; /* dark brown */
-    --secondary-color: #aa9581; /*light brown*/
-    --highlight-color: #416a8e; /*sky blue*/
-    --light-highlight-color: #7a9fc2; /*cloud blue*/
-}
+ /* CSS Variables */
+ :root {
+     --primary-font: "Inter", sans-serif;
+     --secondary-font: "Macondo", cursive;
+     --primary-color: #3a2620;
+     /* dark brown */
+     --secondary-color: #aa9581;
+     /*light brown*/
+     --highlight-color: #416a8e;
+     /*sky blue*/
+     --light-highlight-color: #7a9fc2;
+     /*cloud blue*/
+ }
 
-/* Global styles */
+ /* Global styles */
 
-body {
-    font-family: var(--primary-font);
-}
+ body {
+     font-family: var(--primary-font);
+ }
 
-h1,
-h2,
-h3 {
-    font-family: var(--secondary-font);
-    color: var(--primary-color);
-    text-transform: uppercase;
-}
+ h1,
+ h2,
+ h3 {
+     font-family: var(--secondary-font);
+     color: var(--primary-color);
+ }
 
-.sub-heading-color {
-    color: var(--highlight-color); 
-}
+ h1,
+ h2 {
+     text-transform: uppercase;
+ }
 
-.section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
+ h2 {
+     margin-bottom: 2rem;
+ }
 
-/* Navbar*/
-#navbar {
-    background-color: var(--primary-color);
-}
+ .sub-heading-color {
+     color: var(--highlight-color);
+ }
 
-#navbar .logo {
-    width: 30px;
-}
+ .section {
+     margin-top: 2rem;
+     margin-bottom: 2rem;
+ }
 
-/* Header */
-#header .lead {
-   font-family: var(--secondary-font); 
-}
+ /* Navbar*/
+ #navbar {
+     background-color: var(--primary-color);
+ }
 
-/* grid visualisation CSS for testing */
-/* .container, 
+ #navbar .logo {
+     width: 30px;
+ }
+
+ /* Header */
+ #header .lead {
+     font-family: var(--secondary-font);
+ }
+
+ /* Services */
+ #services .card-footer {
+     font-weight: bold;
+     color: var(--highlight-color);
+     background-color: transparent;
+ }
+
+ #services .card {
+     margin-bottom: 1.5rem;
+ }
+
+ /* grid visualisation CSS for testing */
+ /* .container, 
 .row {
     border: 2px solid black;
 }
@@ -58,3 +81,38 @@ h3 {
     border: 2px solid white;
     background-color: lightgray;
 } */
+
+ /* Media queries */
+ /* Medium devices (tablets, 768px nd up) */
+ @media screen and (min-width: 768px) {
+     #services .card-body {
+         /* Make all service cards the same height for consistency */
+         min-height: 191px;
+     }
+
+     /* Large devices (small laptops, 992px and up) */
+     @media screen and (min-width: 992px) {
+         #services .card-body {
+             /* Make all service cards the same height for consistency */
+             min-height: auto;
+         }
+
+     }
+
+     /* XL devices (1200px and up) */
+     @media screen and (min-width: 1200px) {
+         #services .card-body {
+             /* Make all service cards the same height for consistency */
+             min-height: 220px;
+         }
+
+     }
+
+     /* XXL devices (1400px and up) */
+     @media screen and (min-width: 1400px) {
+         #services .card-body {
+             /* Make all service cards the same height for consistency */
+             min-height: 195px;
+         }
+
+     }
