@@ -19,6 +19,7 @@
 
 body {
     font-family: var(--primary-font);
+    padding-top:56.15px; /* Navbar height puthes the top dow nunder fixed navbar*/
 }
 
 h1,
@@ -74,7 +75,10 @@ h2 {
 /* Navbar*/
 #navbar {
     background-color: var(--primary-color);
+    padding: 0; /* remove default padding */
 }
+
+
 
 #navbar .logo {
     width: 30px;
