@@ -103,9 +103,9 @@
     color: white;
     font-weight: bolder;
     font-size: 1.1rem;
-    max-width: 350px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 350px; 
+    margin: 0 auto; /* center the text */
+    text-align: center; 
 }
 
 
