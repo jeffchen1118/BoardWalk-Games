@@ -1,4 +1,4 @@
- /*inter and macondo fonts*/
+/*inter and macondo fonts*/
  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap');
 
  /* CSS Variables */
@@ -48,26 +48,27 @@
 
  /* Buttons */
  .custom-button-filled {
-    border: 2px solid var(--highlight-color);
-    background-color: var(--highlight-color);
-    color: white;
+     border: 2px solid var(--highlight-color);
+     background-color: var(--highlight-color);
+     color: white;
  }
+
  .custom-button-filled:hover {
-    border: 2px solid var(--secondary-color);
-    background-color: var(--secondary-color);
-    color: white; 
+     border: 2px solid var(--secondary-color);
+     background-color: var(--secondary-color);
+     color: white;
  }
 
-.custom-button-outline {
-    border: 2px solid var(--highlight-color);
-    background-color: white;
-    padding: 7px 25px;
-    color: var(--highlight-color);
+ .custom-button-outline {
+     border: 2px solid var(--highlight-color);
+     background-color: white;
+     padding: 7px 25px;
+     color: var(--highlight-color);
  }
 
-.custom-button-outline:hover {
-    background-color: var(--highlight-color);
-    color: white; 
+ .custom-button-outline:hover {
+     background-color: var(--highlight-color);
+     color: white;
  }
 
  /* Navbar*/
@@ -95,45 +96,58 @@
      margin-bottom: 1.5rem;
  }
 
+/* Events */
+
+.student-discount p {
+    background-color: var(--highlight-color);
+    color: white;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
  /* Game library cards */
  #new-games .card,
  #fav-games .card {
-    border: none;
+     border: none;
  }
 
  /* Footer / contact */
  #contact {
-    background-color: var(--primary-color);
-    color: white;
-    padding-bottom: 3px;
+     background-color: var(--primary-color);
+     color: white;
+     padding-bottom: 3px;
  }
 
  #contact h2 {
-    color: white;
+     color: white;
  }
 
  #contact .sub-heading-color {
-    color: var(--highlight-color-light);
+     color: var(--highlight-color-light);
  }
 
  #contact i {
-    color: var(--secondary-color);
-    font-size: 1.2rem;
-    margin-right: 15px;
+     color: var(--secondary-color);
+     font-size: 1.2rem;
+     margin-right: 15px;
  }
 
  #contact .social-links i {
-    color: var(--highlight-color-light);
-    font-size: 1.9rem;
-    transition: color 0.3s ease-in-out; 
+     color: var(--highlight-color-light);
+     font-size: 1.9rem;
+     transition: color 0.3s ease-in-out;
  }
 
  #contact .social-links i:hover {
-    color: var(--secondary-color);
+     color: var(--secondary-color);
  }
 
  #contact .table-dark * {
-    background: transparent;
+     background: transparent;
  }
 
  /* grid visualisation CSS for testing */
@@ -154,30 +168,31 @@
          /* Make all service cards the same height for consistency */
          min-height: 191px;
      }
+ }
 
-     /* Large devices (small laptops, 992px and up) */
-     @media screen and (min-width: 992px) {
-         #services .card-body {
-             /* Make all service cards the same height for consistency */
-             min-height: auto;
-         }
-
+ /* Large devices (small laptops, 992px and up) */
+ @media screen and (min-width: 992px) {
+     #services .card-body {
+         /* Make all service cards the same height for consistency */
+         min-height: auto;
      }
 
-     /* XL devices (1200px and up) */
-     @media screen and (min-width: 1200px) {
-         #services .card-body {
-             /* Make all service cards the same height for consistency */
-             min-height: 220px;
-         }
+ }
 
+ /* XL devices (1200px and up) */
+ @media screen and (min-width: 1200px) {
+     #services .card-body {
+         /* Make all service cards the same height for consistency */
+         min-height: 220px;
      }
 
-     /* XXL devices (1400px and up) */
-     @media screen and (min-width: 1400px) {
-         #services .card-body {
-             /* Make all service cards the same height for consistency */
-             min-height: 195px;
-         }
+ }
 
+ /* XXL devices (1400px and up) */
+ @media screen and (min-width: 1400px) {
+     #services .card-body {
+         /* Make all service cards the same height for consistency */
+         min-height: 195px;
      }
+
+ }
